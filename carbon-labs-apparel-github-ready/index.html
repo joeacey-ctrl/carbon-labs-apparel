@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Carbon Labs Apparel</title>
+  <meta name="description" content="Premium Carbon Labs apparel and custom jerseys.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#000;--panel:#070707;--panel2:#0c0c0c;--gold:#e3b23c;--gold2:#f1cf69;--white:#f5f5f3;--muted:#b7b7b7;--line:rgba(227,178,60,.32);--max:1270px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#000;color:var(--white);font-family:Montserrat,Arial,sans-serif}body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.2;background:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0 1px,transparent 1px 7px)}img{display:block;max-width:100%}a{color:inherit}
+
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.96);backdrop-filter:blur(10px);border-bottom:1px solid #171717}.header-inner{width:min(100%,1360px);height:62px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 14px}.brand{height:50px;min-width:220px;padding:0 20px 0 8px;border-left:1px solid #171717;border-right:1px solid #171717;display:flex;align-items:center;text-decoration:none}.brand img{width:188px;height:44px;object-fit:contain}.nav{display:flex;align-items:center;gap:24px;margin-left:auto;padding-right:14px}.nav a{text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.09em;color:#e6e6e6}.nav a:hover{color:var(--gold2)}
+
+    .hero-shell{border-bottom:1px solid rgba(227,178,60,.22)}.hero{width:min(var(--max),calc(100% - 30px));margin:auto;display:grid;grid-template-columns:.92fr 1.08fr;gap:30px;align-items:center;padding:34px 0 30px}.eyebrow{display:block;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.23em;text-transform:uppercase;margin-bottom:14px}.hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(62px,6.3vw,94px);line-height:.94;letter-spacing:.01em;margin:0}.gold{color:var(--gold)}.hero p{font-size:15px;line-height:1.58;color:#d4d4d4;max-width:570px;margin:18px 0 20px}.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:580px}.hero-actions .primary{grid-column:1/-1}.action{min-height:76px;border-radius:10px;text-decoration:none;display:flex;align-items:center;gap:18px;padding:0 20px;border:1px solid #333;background:#080808;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,filter .2s ease}.action:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 10px 28px rgba(227,178,60,.13)}.action.primary{min-height:86px;background:linear-gradient(180deg,#f3d16e,#d9aa3b);color:#080808;border-color:#e0b24c;box-shadow:0 0 0 1px rgba(241,207,105,.12),0 0 30px rgba(227,178,60,.16)}.action.primary:hover{box-shadow:0 0 0 1px rgba(241,207,105,.3),0 0 36px rgba(227,178,60,.32);filter:brightness(1.04)}.action .ico{font-size:24px;color:var(--gold)}.action.primary .ico{color:#111}.action strong{display:block;font-size:15px;line-height:1.15}.action small{display:block;font-size:10px;letter-spacing:.04em;margin-top:4px}.action .arrow{margin-left:auto;font-size:30px;font-weight:800}
+
+    .hero-image{height:530px;background:#050505;border:1px solid #1d1d1d;border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.55)}.hero-image img{width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.08);transition:transform .35s ease,filter .35s ease}.hero-image:hover img{transform:scale(1.13);filter:brightness(1.04)}
+
+    .promo{width:min(var(--max),calc(100% - 30px));margin:18px auto 0;border:1px solid rgba(227,178,60,.55);border-radius:12px;background:linear-gradient(90deg,rgba(227,178,60,.12),rgba(227,178,60,.03));display:flex;align-items:center;justify-content:space-between;gap:22px;padding:18px 24px}.promo strong{font-family:Anton,Impact,sans-serif;font-size:28px;letter-spacing:.03em}.promo span{font-size:13px;color:#d7d7d7}.promo-badge{color:#111;background:var(--gold2);font-weight:800;font-size:11px;padding:8px 12px;border-radius:999px;white-space:nowrap}
+
+    .feature-wrap{width:min(var(--max),calc(100% - 30px));margin:18px auto 34px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#070707}.features{display:grid;grid-template-columns:repeat(4,1fr)}.feature{padding:28px 22px 26px;text-align:center;position:relative;min-height:178px}.feature:not(:last-child):after{content:"";position:absolute;right:0;top:46px;bottom:46px;width:1px;background:#303030}.feature .symbol{font-size:36px;color:var(--gold2);line-height:1;margin-bottom:20px}.feature strong{display:block;font-family:Anton,Impact,sans-serif;font-size:22px;line-height:1.08;text-transform:uppercase}.feature span{display:block;margin-top:12px;color:#bcbcbc;font-size:13px;line-height:1.45}
+
+    .catalog{width:min(var(--max),calc(100% - 30px));margin:46px auto 54px}.catalog-head{border-top:1px solid rgba(227,178,60,.26);padding-top:48px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:end;gap:30px}.catalog-head h2{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(48px,5vw,70px);line-height:.96;margin:0}.catalog-head p{max-width:520px;margin:0;color:#bdbdbd;line-height:1.6;font-size:14px}
+
+    .products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:#070707;border:1px solid #262626;border-radius:14px;overflow:hidden;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}.card:hover{transform:translateY(-6px);border-color:rgba(227,178,60,.72);box-shadow:0 18px 42px rgba(0,0,0,.42)}.card-media{height:355px;background:#050505;display:flex;align-items:center;justify-content:center;padding:18px;overflow:hidden}.card-media img{width:94%;height:94%;object-fit:contain;filter:drop-shadow(0 12px 24px rgba(0,0,0,.32));transition:transform .28s ease,filter .28s ease}.card:hover .card-media img{transform:scale(1.055);filter:drop-shadow(0 18px 30px rgba(0,0,0,.4)) brightness(1.05)}.card-body{padding:20px}.card-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:8px}.card h3{margin:0;font-size:18px}.price{color:var(--gold2);font-weight:800;font-size:18px;white-space:nowrap}.card p{margin:0 0 18px;color:#aaa;font-size:12px;line-height:1.55;min-height:38px}.order{width:100%;min-height:50px;border-radius:8px;background:linear-gradient(180deg,#efc85f,#d8a538);color:#080808;text-decoration:none;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;transition:filter .2s ease,transform .2s ease,box-shadow .2s ease}.order:hover{filter:brightness(1.06);transform:translateY(-1px);box-shadow:0 8px 20px rgba(227,178,60,.18)}
+
+    .categories{width:min(var(--max),calc(100% - 30px));margin:0 auto 72px}.categories-head{display:flex;align-items:end;justify-content:space-between;gap:24px;border-top:1px solid rgba(227,178,60,.26);padding-top:46px;margin-bottom:22px}.categories-head h2{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(42px,4.5vw,62px);line-height:.95;margin:0}.categories-head p{max-width:480px;color:#aaa;font-size:13px;line-height:1.55;margin:0}.category-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.category{position:relative;min-height:270px;border-radius:14px;overflow:hidden;border:1px solid #262626;background:#060606;text-decoration:none}.category img{width:100%;height:100%;object-fit:contain;padding:18px;opacity:.86;transition:transform .3s ease,opacity .3s ease,filter .3s ease}.category:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,.08) 65%)}.category:hover img{transform:scale(1.07);opacity:1;filter:brightness(1.06)}.category:hover{border-color:rgba(227,178,60,.7)}.category-label{position:absolute;z-index:2;left:16px;right:16px;bottom:16px}.category-label strong{font-size:14px;display:block}.category-label span{font-size:10px;color:#c8c8c8;display:block;margin-top:4px}.coming{display:inline-block;margin-top:8px;color:#111;background:var(--gold2);font-size:9px;font-weight:800;padding:5px 8px;border-radius:999px}
+
+    footer{border-top:1px solid #1b1b1b;color:#767676}.footer-inner{width:min(var(--max),calc(100% - 30px));min-height:92px;margin:auto;display:flex;align-items:center;justify-content:space-between;font-size:12px}.footer-links{display:flex;gap:20px}.footer-links a{text-decoration:none;color:#8d8d8d}.footer-links a:hover{color:var(--gold2)}
+
+    @media(max-width:1100px){.category-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:980px){.nav{gap:16px}.hero{grid-template-columns:1fr 1fr;gap:24px;padding-top:30px}.hero-image{height:460px}.features{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2):after{display:none}.products{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:680px){.header-inner{height:60px;padding:0 10px}.brand{height:48px;min-width:0;padding:0 10px 0 0;border-left:0}.brand img{width:156px;height:42px}.nav{gap:12px;padding-right:2px}.nav a{font-size:10px}.nav a:nth-child(2),.nav a:nth-child(3){display:none}.hero{grid-template-columns:1fr;padding:34px 0 28px}.hero h1{font-size:clamp(58px,18vw,80px)}.hero p{font-size:14px}.hero-image{height:auto;aspect-ratio:1/1}.hero-image img{transform:scale(1.04)}.hero-actions{grid-template-columns:1fr}.hero-actions .primary{grid-column:auto}.action{min-height:64px}.action.primary{min-height:72px}.promo{align-items:flex-start;flex-direction:column}.promo strong{font-size:24px}.features{grid-template-columns:1fr}.feature:not(:last-child):after{top:auto;right:28px;left:28px;bottom:0;width:auto;height:1px}.feature:nth-child(2):after{display:block}.catalog-head,.categories-head{flex-direction:column;align-items:flex-start}.products{grid-template-columns:1fr}.card-media{height:auto;aspect-ratio:1/1}.card-media img{width:90%;height:90%}.category-grid{grid-template-columns:1fr 1fr}.category{min-height:230px}.footer-inner{flex-direction:column;justify-content:center;gap:10px;text-align:center;padding:24px 0}.footer-links{gap:14px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://carbonlabsusa.net" aria-label="Carbon Labs home"><img src="assets/header-logo-reference.png" alt="Carbon Labs"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#apparel">APPAREL</a>
+        <a href="#apparel">JERSEYS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="https://carbonlabsusa.net">MAIN STORE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-shell">
+      <div class="hero">
+        <div>
+          <span class="eyebrow">Premium • Limited • Custom</span>
+          <h1>APPAREL<br><span class="gold">BUILT TO</span><br>STAND OUT.</h1>
+          <p>Premium Carbon Labs apparel with bold designs and custom jersey options. Choose a style below, then complete sizing, name and number selections on its individual EZFormz order form.</p>
+          <div class="hero-actions">
+            <a class="action primary" href="#apparel"><span class="ico">◆</span><span><strong>SHOP APPAREL</strong><small>VIEW ALL DESIGNS</small></span><span class="arrow">›</span></a>
+            <a class="action" href="#apparel"><span class="ico">▦</span><span><strong>JERSEYS</strong><small>CUSTOM NAME & NUMBER</small></span></a>
+            <a class="action" href="https://carbonlabsusa.net"><span class="ico">↗</span><span><strong>SHOP OILS</strong><small>RETURN TO MAIN SITE</small></span></a>
+          </div>
+        </div>
+        <div class="hero-image"><img src="assets/jersey-4.png" alt="Carbon Labs camouflage basketball jersey"></div>
+      </div>
+    </section>
+
+    <section class="promo" aria-label="Jersey promotion">
+      <div><strong>FREE CUSTOM NAME & NUMBER</strong><br><span>Included with every jersey order.</span></div>
+      <div class="promo-badge">CUSTOMIZATION INCLUDED</div>
+    </section>
+
+    <section class="feature-wrap" aria-label="Apparel features">
+      <div class="features">
+        <div class="feature"><div class="symbol">✓</div><strong>PREMIUM<br>QUALITY</strong><span>Built for comfort, durability and everyday wear.</span></div>
+        <div class="feature"><div class="symbol">▦</div><strong>CUSTOM<br>OPTIONS</strong><span>Select your size, jersey number and custom name.</span></div>
+        <div class="feature"><div class="symbol">◇</div><strong>LIMITED<br>DROPS</strong><span>Exclusive designs released in limited quantities.</span></div>
+        <div class="feature"><div class="symbol">★</div><strong>BUILT TO<br>STAND OUT</strong><span>Carbon Labs styling designed to make an impact.</span></div>
+      </div>
+    </section>
+
+    <section class="catalog" id="apparel">
+      <div class="catalog-head">
+        <div><span class="eyebrow">Shop The Collection</span><h2>CHOOSE YOUR<br><span class="gold">JERSEY</span></h2></div>
+        <p>Products are available immediately below. Select your design and go directly to its individual EZFormz page to customize and order.</p>
+      </div>
+
+      <div class="products">
+        <article class="card"><a class="card-media" href="PASTE_EZFORMZ_LINK_BLACK_PINK"><img src="assets/jersey-black-pink.png" alt="Black pink Carbon Labs jersey"></a><div class="card-body"><div class="card-top"><h3>Black / Pink Edition</h3><span class="price">$80</span></div><p>Black pinstripe mesh with bright pink and blue trim.</p><a class="order" href="PASTE_EZFORMZ_LINK_BLACK_PINK">Customize & Order</a></div></article>
+        <article class="card"><a class="card-media" href="PASTE_EZFORMZ_LINK_NAVY_RED"><img src="assets/jersey-2.png" alt="Navy red Carbon Labs jersey"></a><div class="card-body"><div class="card-top"><h3>Navy / Red Edition</h3><span class="price">$80</span></div><p>Classic athletic colorway with bold Carbon Labs lettering.</p><a class="order" href="PASTE_EZFORMZ_LINK_NAVY_RED">Customize & Order</a></div></article>
+        <article class="card"><a class="card-media" href="PASTE_EZFORMZ_LINK_SILVER_BLUE"><img src="assets/jersey-3.png" alt="Silver blue Carbon Labs jersey"></a><div class="card-body"><div class="card-top"><h3>Silver / Blue Edition</h3><span class="price">$80</span></div><p>Light gray mesh with clean powder-blue accents.</p><a class="order" href="PASTE_EZFORMZ_LINK_SILVER_BLUE">Customize & Order</a></div></article>
+        <article class="card"><a class="card-media" href="PASTE_EZFORMZ_LINK_CAMO"><img src="assets/jersey-4.png" alt="Camo Carbon Labs jersey"></a><div class="card-body"><div class="card-top"><h3>Camo Edition</h3><span class="price">$80</span></div><p>Military-inspired camouflage with black and tan trim.</p><a class="order" href="PASTE_EZFORMZ_LINK_CAMO">Customize & Order</a></div></article>
+        <article class="card"><a class="card-media" href="PASTE_EZFORMZ_LINK_BLACK_WHITE"><img src="assets/jersey-5.png" alt="Black white Carbon Labs jersey"></a><div class="card-body"><div class="card-top"><h3>Black / White Edition</h3><span class="price">$80</span></div><p>Minimal all-black mesh with crisp white lettering.</p><a class="order" href="PASTE_EZFORMZ_LINK_BLACK_WHITE">Customize & Order</a></div></article>
+      </div>
+    </section>
+
+    <section class="categories" aria-label="Shop apparel categories">
+      <div class="categories-head">
+        <div><span class="eyebrow">More Carbon Labs Gear</span><h2>SHOP BY<br><span class="gold">CATEGORY</span></h2></div>
+        <p>Jerseys are available now. Additional apparel categories are laid out and ready for product images and order links as your collection expands.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category" href="#apparel"><img src="assets/jersey-black-pink.png" alt="Basketball jerseys"><div class="category-label"><strong>Basketball Jerseys</strong><span>Customize & order now</span></div></a>
+        <a class="category" href="#apparel"><img src="assets/jersey-2.png" alt="Baseball jerseys"><div class="category-label"><strong>Baseball Jerseys</strong><span>Collection slot ready</span><i class="coming">COMING SOON</i></div></a>
+        <a class="category" href="#apparel"><img src="assets/jersey-4.png" alt="Football jerseys"><div class="category-label"><strong>Football Jerseys</strong><span>Collection slot ready</span><i class="coming">COMING SOON</i></div></a>
+        <a class="category" href="#apparel"><img src="assets/jersey-5.png" alt="Carbon Labs hoodies"><div class="category-label"><strong>Hoodies</strong><span>Collection slot ready</span><i class="coming">COMING SOON</i></div></a>
+        <a class="category" href="#apparel"><img src="assets/jersey-3.png" alt="Carbon Labs t-shirts"><div class="category-label"><strong>T-Shirts</strong><span>Collection slot ready</span><i class="coming">COMING SOON</i></div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact"><div class="footer-inner"><span>© 2026 Carbon Labs. All rights reserved.</span><div class="footer-links"><a href="https://carbonlabsusa.net">Main Store</a><a href="#apparel">Apparel</a></div></div></footer>
+</body>
+</html>
